@@ -1178,6 +1178,54 @@ label {
   z-index: 9999;
 }
 
+#logos {
+  background: url("./imgs/فوتور.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  position: relative;
+}
+
+#logos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0a3a49;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+#logos .row {
+  display: grid;
+  grid-template-columns: repeat(5, 0.2fr);
+  column-gap: 0.1rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+
+}
+
+
+
+#logos .row .col img {
+  max-width:90%;
+  margin: 1rem 0;
+  padding: 30px;
+  align-items: center;
+
+}
+
+#logos .logo .it {
+  max-width: 350px;
+}
+
+#logos .row .col img:hover {
+  transform: 1rem;
+}
+
 .cs-cursor_lg {
   width: 40px;
   height: 40px;
@@ -6165,6 +6213,86 @@ label {
 @media screen and (max-width: 1280px) {
   .cs-hero.cs-style2 {
     height: 800px;
+  }
+}
+@media (max-width:800px) {
+ 
+
+  #logos {
+      height: 2000px;
+  }
+
+  #logos .row .col img {
+      max-width: 300px;
+  }
+
+  #logos .logo .it {
+      max-width: 450px;
+  }
+
+  #logos .row {
+
+      grid-template-columns: repeat(2, 0.2fr);
+  }
+}
+@media (max-width:853px) {
+  
+
+  #logos {
+      height: 2500px;
+  }
+
+  #logos .row .col img {
+      max-width: 300px;
+  }
+
+  #logos .logo .it {
+      max-width: 450px;
+  }
+
+  #logos .row {
+
+      grid-template-columns: repeat(2, 0.2fr);
+      column-gap: 7rem;
+  }
+}
+@media (max-width:650px) {
+  
+  #logos .row {
+
+      grid-template-columns: repeat(2, 0.2fr);
+      column-gap: 4rem;
+  }
+}
+@media (max-width:414px) {
+  #logos .row .col img {
+      max-width: 360px;
+  }
+
+  #logos .row .col img {
+      max-width: 300px;
+  }
+
+  #logos .logo .it {
+      max-width: 350px;
+  }
+
+
+  #logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #logos .row {
+
+      grid-template-columns: repeat(1, 0.2fr);
+      row-gap: 1rem;
+  }
+}
+@media (max-width:430px) {
+  #logos .row .col img {
+      max-width: 360px;
   }
 }
 @media screen and (max-width: 1199px) {
