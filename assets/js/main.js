@@ -39,6 +39,18 @@
   /*--------------------------------------------------------------
     Scripts initialization
   --------------------------------------------------------------*/
+  // عند تحميل الصفحة بشكل كامل، إخفاء شاشة التحميل وعرض المحتوى الرئيسي
+window.addEventListener("load", function() {
+  const loadingScreen = document.getElementById('loading-screen');
+  const mainContent = document.getElementById('main-content');
+
+  // إخفاء شاشة التحميل
+  loadingScreen.style.display = 'none';
+
+  // عرض المحتوى الرئيسي
+  mainContent.style.display = 'block';
+});
+
   $.exists = function (selector) {
     return $(selector).length > 0;
   };
