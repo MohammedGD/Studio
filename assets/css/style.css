@@ -1253,7 +1253,7 @@ label {
 
 #logos .row {
   display: grid;
-  grid-template-columns: repeat(4, 0.2fr);
+  grid-template-columns: repeat(4, 1fr);
   column-gap: 0.1rem;
   align-items: center;
   max-width: 1200px;
@@ -1264,7 +1264,7 @@ label {
 
 
 #logos .row .col img {
-  max-width:90%;
+  max-width:100%;
   margin: 1rem 0;
   padding: 30px;
   align-items: center;
@@ -6285,14 +6285,14 @@ label {
 
   #logos .row {
 
-      grid-template-columns: repeat(2, 0.2fr);
+      grid-template-columns: repeat(2, 0.7fr);
   }
 }
 @media (max-width:853px) {
   
 
   #logos {
-      height: 1700px;
+      height: 700px;
   }
 
   #logos .row .col img {
@@ -6305,7 +6305,7 @@ label {
 
   #logos .row {
 
-      grid-template-columns: repeat(2, 0.2fr);
+    grid-template-columns: repeat(2, 0.7fr);
       column-gap: 7rem;
   }
 }
