@@ -285,7 +285,7 @@ input, textarea {
   top: 0;
   width: 100%;
   height: 100vh;
-  background-color: #181818;
+  background-color: #0b5658f1;
 }
 
 .cs-preloader_bg {
@@ -329,6 +329,25 @@ input, textarea {
   margin-left: -60px;
   margin-top: -60px;
 }
+.animated-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid;
+  width: 0;
+  animation: typing 2s steps(20, end), blink 0.75s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  from { border-color: transparent; }
+  to { border-color: black; }
+}
+
 
 .cs-preloader_in::before {
   content: "";
