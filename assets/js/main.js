@@ -40,6 +40,21 @@
     Scripts initialization
   --------------------------------------------------------------*/
   // عند تحميل الصفحة بشكل كامل، إخفاء شاشة التحميل وعرض المحتوى الرئيسي
+  const words = ["علامات تجارية","جرافيك ديزاين", "تصميم مواقع", "تصوير شخصي", "تعديل فيديو"];
+let currentWordIndex = 0;
+const changingText = document.getElementById("changing-text");
+
+function changeWord() {
+  changingText.classList.remove("animated-text"); // Remove animation to reset
+  setTimeout(() => {
+    changingText.textContent = words[currentWordIndex];
+    changingText.classList.add("animated-text"); // Re-add animation
+    currentWordIndex = (currentWordIndex + 1) % words.length;
+  }, 50); // Small delay to allow animation reset
+}
+
+setInterval(changeWord, 3000);
+
 window.addEventListener("load", function() {
   const loadingScreen = document.getElementById('loading-screen');
   const mainContent = document.getElementById('main-content');
