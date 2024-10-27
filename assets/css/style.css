@@ -6288,6 +6288,7 @@ label {
       grid-template-columns: repeat(2, 0.7fr);
   }
 }
+
 @media (max-width:853px) {
   
 
@@ -6316,6 +6317,7 @@ label {
       grid-template-columns: repeat(2, 0.2fr);
       column-gap: 4rem;
   }
+  
 }
 @media (max-width:414px) {
   #logos .row .col img {
@@ -6347,6 +6349,11 @@ label {
   #logos .row .col img {
       max-width: 360px;
   }
+  
+  #logos {
+    height: 1700px;
+}
+
 }
 @media screen and (max-width: 1199px) {
   .cs-hero.cs-style1 {
