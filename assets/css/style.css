@@ -61,7 +61,6 @@ html {
 
 .loading-icon img {
   width: 100px;
-  animation: spin 2s linear infinite;
 }
 
 /* حركة الدوران للأيقونة */
