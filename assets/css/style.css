@@ -48,15 +48,12 @@ html {
   background-color: #181818;
  
 }
-body{
-  cursor:zoom-out , auto;
-}
 /* شاشة التحميل */
 #loading-screen {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: #161616;
+  background-color: #008080ff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +62,7 @@ body{
 
 .loading-icon img {
   width: 100px;
-
+  animation: ease 3s linear infinite;
 }
 
 /* حركة الدوران للأيقونة */
