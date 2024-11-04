@@ -53,18 +53,18 @@ function changeWord() {
   }, 50); // Small delay to allow animation reset
 }
 
-setInterval(changeWord, 3000);
+// setInterval(changeWord, 3000);
 
-window.addEventListener("load", function() {
-  const loadingScreen = document.getElementById('loading-screen');
-  const mainContent = document.getElementById('main-content');
+// window.addEventListener("load", function() {
+//   const loadingScreen = document.getElementById('loading-screen');
+//   const mainContent = document.getElementById('main-content');
 
-  // إخفاء شاشة التحميل
-  loadingScreen.style.display = 'none';
+//   // إخفاء شاشة التحميل
+//   loadingScreen.style.display = 'none';
 
-  // عرض المحتوى الرئيسي
-  mainContent.style.display = 'block';
-});
+//   // عرض المحتوى الرئيسي
+//   mainContent.style.display = 'block';
+// });
 
   $.exists = function (selector) {
     return $(selector).length > 0;
