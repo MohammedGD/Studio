@@ -46,6 +46,10 @@ html {
   line-height: 1.6em;
   overflow-x: hidden;
   background-color: #181818;
+ 
+}
+body{
+  cursor:zoom-out , auto;
 }
 /* شاشة التحميل */
 #loading-screen {
@@ -61,6 +65,7 @@ html {
 
 .loading-icon img {
   width: 100px;
+
 }
 
 /* حركة الدوران للأيقونة */
