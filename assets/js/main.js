@@ -1,3 +1,12 @@
+// const typed = new Typed('.multiple-text' , {
+//   string: ['علامات تجارية','تصميم شعارات','هويات بصرية','تصميم مواقع'],
+//   typeSpeed: 100,
+//   backSpeed: 100,
+//   backDelay:1000,
+//   loop: true
+// });
+
+
 (function ($) {
   'use strict';
 
@@ -40,20 +49,22 @@
     Scripts initialization
   --------------------------------------------------------------*/
   // عند تحميل الصفحة بشكل كامل، إخفاء شاشة التحميل وعرض المحتوى الرئيسي
-  const words = ["علامات تجارية","جرافيك ديزاين", "تصميم مواقع", "تصوير شخصي", "تعديل فيديو"];
-let currentWordIndex = 0;
-const changingText = document.getElementById("changing-text");
-
-function changeWord() {
-  changingText.classList.remove("animated-text"); // Remove animation to reset
-  setTimeout(() => {
-    changingText.textContent = words[currentWordIndex];
-    changingText.classList.add("animated-text"); // Re-add animation
-    currentWordIndex = (currentWordIndex + 1) % words.length;
-  }, 50); // Small delay to allow animation reset
-}
-
-// setInterval(changeWord, 3000);
+  const words = ['علامات تجارية','تصميم شعارات','هويات بصرية','تصميم مواقع'];
+  let currentWordIndex = 0;
+  const changingText = document.getElementById("changing-text");
+  
+  function changeWord() {
+    changingText.classList.remove("animated-text"); // إزالة التحريك لإعادة التعيين
+    setTimeout(() => {
+      changingText.textContent = words[currentWordIndex];
+      changingText.classList.add("animated-text"); // إعادة التحريك
+      currentWordIndex = (currentWordIndex + 3) % words.length;
+    }, 50); // تأخير بسيط لإعادة تعيين التحريك
+  }
+  
+  // تغيير الكلمة كل 5 ثوانٍ
+  setInterval(changeWord, 5000);
+  
 
 // window.addEventListener("load", function() {
 //   const loadingScreen = document.getElementById('loading-screen');
